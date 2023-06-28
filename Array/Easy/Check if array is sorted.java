@@ -28,14 +28,14 @@ class Solution {
 
 class Solution {
     public boolean check(int[] nums) {
-        int n=nums.length-1;
+        int n=nums.length;
         boolean sort=false;
         int flag=0;          //flag variable to check that at which element the array is rotated
         if(nums[0]>=nums[n-1]){
             sort=true;
         }
 
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n-1;i++){
             if(nums[i]>nums[i+1])
             {
                 flag++;
